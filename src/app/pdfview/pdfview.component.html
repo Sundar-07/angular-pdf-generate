@@ -1,0 +1,32 @@
+
+<br>
+
+<p class="text-center"><button (click)="makePDF()" class="btn btn-info">Download</button></p>
+
+<br>
+
+<div class="container" #content>
+    <h1 class="text-center">Build Metrix</h1>
+    <table class="table table-striped table-bordered" style="width: 50%;">
+        <thead>
+            <tr>
+                <th>Room</th>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Status</th>
+                <th>Tech</th>
+                <th>Images</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let content of contents">
+            <tr>
+                <td>{{content.room}}</td>
+                <td>{{content.category}}</td>
+                <td>{{content.item}}</td>
+                <td>{{content.status}}</td>
+                <td>{{content.team}}</td>
+                <td><img src="https://diy.sndimg.com/content/dam/images/hgtv/video/0/02/021/0216/0216772.jpg.rend.hgtvcom.1280.720.jpeg" style="width: 240px" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
